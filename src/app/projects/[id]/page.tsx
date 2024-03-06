@@ -3,25 +3,19 @@ import RelatedProjects from '@/components/projects/RelatedProject';
 import { projectsData } from '@/data/projectData';
 import { ProjectTypes } from '@/helpers/types/project';
 import axios from 'axios';
-import { GetServerSideProps } from 'next';
 import Image from 'next/image';
 import { useParams, usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { FiClock, FiTag } from 'react-icons/fi';
 import { TwitterShare, LinkedinShare, WhatsappShare } from 'react-share-kit';
 
-export default function ProjectSingle() {
+export default function ProjectSingle({params}:{params: {id:string}}) {
   const [data, setData] = useState<ProjectTypes | undefined>(undefined);
-  const { slug } = useParams();
-  const project = projectsData.filter(
-    (project) => project.id === parseInt(slug[0])
-  )[0];
-
   const fetchData = async (): Promise<ProjectTypes | undefined> => {
     try {
       const res = await axios.get('/data/project.json');
       const selectedData = res.data.filter(
-        (item: any) => item.id === parseInt(slug[0])
+        (item: any) => item.id === parseInt(params.id)
       )[0];
       setData(selectedData);
       return res.data;
