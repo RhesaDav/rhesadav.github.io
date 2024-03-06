@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Sikerja CMS",
+    "url": "http://sikerja-dpupr.papuabaratprov.go.id/",
+    "category": ["Web Application"],
+    "publishDate": "Jul 26, 2024",
+    "images": [
+      "/images/sikerja/001.png",
+      "/images/sikerja/002.png",
+      "/images/sikerja/003.png"
+    ],
+    "content": "Proyek ini bertujuan untuk mengembangkan sistem manajemen administrasi yang memiliki tingkat keamanan tinggi menggunakan Next.js. Proyek ini mencakup fitur-fitur seperti pencatatan data real-time, akses multi-peran, dan langkah-langkah keamanan setara dengan standar pemerintah. Proses pengembangan melibatkan penggunaan Figma untuk desain, ClickUp untuk manajemen proyek, dan Diagrams.net untuk representasi visual.",
+    "info": {
+      "technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "NextJS",
+            "TailwindCSS"
+          ]
+        }
+      ],
+      "features": [
+        {
+          "title": "Features",
+          "feature": [
+            "Terdiri dari role admin dan superadmin. Superadmin memiliki kewenangan menambahkan admin baru.",
+            "Mendukung impor data massal dari file CSV.",
+            "Menyediakan opsi untuk mengekspor sejumlah data dari tabel ke dalam file CSV.",
+            "Memungkinkan pengguna memilih satu set data dan mengekspornya dalam format PDF.",
+            "Menyediakan fungsi create, read, delete, dan update untuk semua data yang saling berkaitan.",
+            "Memungkinkan penambahan pengguna baru, melihat daftar seluruh pengguna, menghapus pengguna, dan mengedit data pengguna.",
+            "Menerapkan sistem keamanan tinggi untuk melindungi data sensitif.",
+            "Menyediakan log aktivitas untuk memantau perubahan dan aktivitas di dalam sistem.",
+            "Merupakan antarmuka yang responsif dan ramah pengguna untuk mendukung penggunaan yang nyaman di berbagai perangkat.",
+            "Menggunakan Figma untuk desain yang estetis, ClickUp untuk manajemen proyek yang efisien, dan Diagrams.net untuk representasi visual yang jelas."
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "fullName": "Rhesa Davinanto",
+  "title": "Full-Stack Software Engineer",
+  "experience": "3 years",
+  "passions": ["programming", "reading", "writing", "speaking"],
+  "languages": [
+    {
+      "name": "English",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Indonesian",
+      "level": "Professional"
+    }
+  ],
+  "profession": {
+    "description": "I use my diligence and love for creating things that make a positive impact. That's why I enjoy building things that make a difference.",
+    "expertise": {
+      "frontEnd": {
+        "description": "Proficient in JavaScript/TypeScript, HTML, and CSS. Actively participate in discussions with fellow front-end developers to share best practices and the latest technologies."
+      },
+      "backEnd": {
+        "description": "Experience with Node.js and cloud-based architecture."
+      },
+      "problemSolving": {
+        "description": "Able to solve complex problems while building industry-leading applications."
+      },
+      "teamwork": {
+        "description": "Experienced with the Scrum methodology and upholds the spirit of teamwork."
+      },
+      "versionControl": {
+        "tools": ["Git", "GitFlow"],
+        "description": "Understanding of the software development lifecycle, including working experience with Git/GitFlow, Pull Requests, and Code Review."
+      },
+      "performanceOptimization": {
+        "description": "Experience with performance optimization, caching, and versioning techniques for static resources."
+      },
+      "scalabilityDeliverability": {
+        "description": "Able to ensure solutions developed are scalable and meet overall business needs. Lead technical teams to deliver flexible and scalable solutions."
+      }
+    }
+  },
+  "bio": "As a full-stack software engineer with 3 years of experience, I have a passion for programming, reading, writing, and speaking.In my profession, I use my diligence and love for creating things that make a positive impact. That's why I enjoy building things that make a difference.Combining solid technical expertise and a passion for contributing positively, I am ready to be part of an innovative and impactful team."
+}
