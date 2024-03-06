@@ -1,7 +1,7 @@
-"use client";
-import { AboutMeTypes } from "@/helpers/types/aboutMe";
-import Image from "next/image";
-import { useState } from "react";
+'use client';
+import { AboutMeTypes } from '@/helpers/types/aboutMe';
+import Image from 'next/image';
+import { useState } from 'react';
 
 type Props = {
   data?: AboutMeTypes;
@@ -37,7 +37,7 @@ function AboutMeBio({ data }: Props) {
               >
                 <div
                   className="flex flex-col justify-center rounded-full overflow-hidden bg-blue-600 text-xs text-white text-center whitespace-nowrap transition duration-500 dark:bg-blue-500"
-                  style={{width: lang.level === "Beginner" ? "30%" : lang.level === "Intermediate" ? "60%" : "100%"}}
+                  style={{width: lang.level === 'Beginner' ? '30%' : lang.level === 'Intermediate' ? '60%' : '100%'}}
                 ></div>
               </div>
             </div>

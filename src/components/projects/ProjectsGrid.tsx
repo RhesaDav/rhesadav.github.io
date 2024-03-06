@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
@@ -11,8 +11,8 @@ type Props = {
 }
 
 function ProjectsGrid({data}: Props) {
-	const [searchProject, setSearchProject] = useState<string>("");
-	const [selectProject, setSelectProject] = useState<string>("");
+	const [searchProject, setSearchProject] = useState<string>('');
+	const [selectProject, setSelectProject] = useState<string>('');
 
 	const selectProjectsByCategory = data?.filter((item) => {
 		const formattedCategory = item.category.map((cat) => cat.charAt(0).toUpperCase() + cat.slice(1));

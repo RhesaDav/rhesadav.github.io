@@ -1,24 +1,24 @@
-"use client";
-import AboutCounter from "@/components/about/AboutCounter";
-import AboutMeBio from "@/components/about/AboutMeBio";
-import AboutSkill from "@/components/about/AboutSkill";
-import { AboutMeTypes as Types } from "@/helpers/types/aboutMe";
-import axios from "axios";
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+'use client';
+import AboutCounter from '@/components/about/AboutCounter';
+import AboutMeBio from '@/components/about/AboutMeBio';
+import AboutSkill from '@/components/about/AboutSkill';
+import { AboutMeTypes as Types } from '@/helpers/types/aboutMe';
+import axios from 'axios';
+import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
 type Props = {};
 
-export default function page({}: Props) {
+export default function Page({}: Props) {
   const [data, setData] = useState<Types | undefined>(undefined);
 
   const fetchData = async (): Promise<Types> => {
     try {
-      const res = await axios.get("data/about-me.json");
+      const res = await axios.get('data/about-me.json');
       setData(res.data);
       return res.data;
     } catch (error) {
-      throw new Error("An unexpected error occurred");
+      throw new Error('An unexpected error occurred');
     }
   };
 

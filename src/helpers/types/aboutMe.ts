@@ -1,4 +1,4 @@
-export type LangLevel = "Beginner" | "Intermediate" | "Professional"
+export type LangLevel = 'Beginner' | 'Intermediate' | 'Professional'
 
 export type AboutMeTypes = {
   fullName: string

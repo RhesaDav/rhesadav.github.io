@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { ProjectTypes } from '@/helpers/types/project';
 import { motion } from 'framer-motion';
 import Image from 'next/image';

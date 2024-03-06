@@ -4,16 +4,16 @@ import ProjectsGrid from '../../components/projects/ProjectsGrid';
 import { ProjectTypes } from '@/helpers/types/project';
 import { useEffect, useState } from 'react';
 
-function index() {
+export default function Index() {
 	const [data,setData] = useState(undefined)
 
 	const fetchData = async ():Promise<ProjectTypes | undefined> => {
 		try {
-			const res = await axios.get("/data/project.json")
+			const res = await axios.get('/data/project.json')
 			setData(res.data)
 			return res.data
 		} catch (error) {
-			throw new Error("An unexpected error occurred");
+			throw new Error('An unexpected error occurred');
 		}
 	}
 
@@ -28,5 +28,3 @@ function index() {
 		</div>
 	);
 }
-
-export default index;

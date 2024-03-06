@@ -1,11 +1,11 @@
 'use client'
-import ProjectSingle from "@/components/projects/ProjectSingle";
-import ProjectsGrid from "@/components/projects/ProjectsGrid";
-import Button from "@/components/reusable/Button";
-import AppBanner from "@/components/shared/AppBanner";
-import AppHeader from "@/components/shared/AppHeader";
-import Image from "next/image";
-import Link from "next/link";
+import ProjectSingle from '@/components/projects/ProjectSingle';
+import ProjectsGrid from '@/components/projects/ProjectsGrid';
+import Button from '@/components/reusable/Button';
+import AppBanner from '@/components/shared/AppBanner';
+import AppHeader from '@/components/shared/AppHeader';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (

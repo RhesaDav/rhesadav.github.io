@@ -24,7 +24,7 @@ function AppBanner() {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, I'm Rhesa Davinanto
+					Hi, I&apos;m Rhesa Davinanto
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -67,13 +67,15 @@ function AppBanner() {
 				transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
 				className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
 			>
-				<img
+				<Image
 					src={
 						activeTheme === 'dark'
 							? '/images/developer.svg'
 							: '/images/developer-dark.svg'
 					}
 					alt="Developer"
+					height={1000}
+					width={1000}
 				/>
 			</motion.div>
 		</motion.section>

@@ -31,7 +31,7 @@ function ProjectsFilter({ setSelectProject }:Props) {
                 dark:text-ternary-light
             "
 		>
-			<option value={""} className="text-sm sm:text-md">
+			<option value={''} className="text-sm sm:text-md">
 				All Projects
 			</option>
 

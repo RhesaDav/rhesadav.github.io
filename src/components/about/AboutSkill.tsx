@@ -1,8 +1,8 @@
-import React from "react";
-import { FaReact } from "react-icons/fa";
-import Image from "next/image";
-import { skillList } from "@/data/skillList";
-import { motion } from "framer-motion";
+import React from 'react';
+import { FaReact } from 'react-icons/fa';
+import Image from 'next/image';
+import { skillList } from '@/data/skillList';
+import { motion } from 'framer-motion';
 
 type Props = {};
 
@@ -16,7 +16,7 @@ export default function AboutSkill({}: Props) {
             key={index}
             className="flex flex-col items-center cursor-pointer"
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           >
             <Image
               src={item.icon}

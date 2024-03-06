@@ -1,18 +1,14 @@
-"use client";
-import RelatedProjects from "@/components/projects/RelatedProject";
-import { projectsData } from "@/data/projectData";
-import { ProjectTypes } from "@/helpers/types/project";
-import axios from "axios";
-import { GetServerSideProps } from "next";
-import Image from "next/image";
-import { useParams, usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { FiClock, FiTag } from "react-icons/fi";
-import { TwitterShare, LinkedinShare, WhatsappShare } from "react-share-kit";
-
-type Props = {
-  data: ProjectTypes;
-};
+'use client';
+import RelatedProjects from '@/components/projects/RelatedProject';
+import { projectsData } from '@/data/projectData';
+import { ProjectTypes } from '@/helpers/types/project';
+import axios from 'axios';
+import { GetServerSideProps } from 'next';
+import Image from 'next/image';
+import { useParams, usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { FiClock, FiTag } from 'react-icons/fi';
+import { TwitterShare, LinkedinShare, WhatsappShare } from 'react-share-kit';
 
 export default function ProjectSingle() {
   const [data, setData] = useState<ProjectTypes | undefined>(undefined);
@@ -23,14 +19,14 @@ export default function ProjectSingle() {
 
   const fetchData = async (): Promise<ProjectTypes | undefined> => {
     try {
-      const res = await axios.get("/data/project.json");
+      const res = await axios.get('/data/project.json');
       const selectedData = res.data.filter(
         (item: any) => item.id === parseInt(slug[0])
       )[0];
       setData(selectedData);
       return res.data;
     } catch (error) {
-      throw new Error("An unexpected error occurred");
+      throw new Error('An unexpected error occurred');
     }
   };
 
@@ -75,7 +71,7 @@ export default function ProjectSingle() {
               <Image
                 src={project}
                 className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
-                alt={"image"+ index}
+                alt={'image'+ index}
                 key={index}
                 width={1000}
                 height={900}
@@ -134,7 +130,7 @@ export default function ProjectSingle() {
               Technologies
             </p>
             <p className="font-general-regular text-primary-dark dark:text-ternary-light">
-              {data?.info.technologies[0].techs.join(", ")}
+              {data?.info.technologies[0].techs.join(', ')}
             </p>
           </div>
 
@@ -167,7 +163,7 @@ export default function ProjectSingle() {
           {data?.info.features.map((details, index) => {
             return (
               details.feature.map((item,index) => (
-                  <p className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light">{`${String(index +1)}. ${item}`}</p>
+                  <p key={index} className="font-general-regular mb-5 text-lg text-ternary-dark dark:text-ternary-light">{`${String(index +1)}. ${item}`}</p>
               ))
             )
           })}

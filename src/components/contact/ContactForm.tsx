@@ -1,8 +1,8 @@
-import emailjs from "@emailjs/browser";
-import Button from "../reusable/Button";
-import FormInput from "../reusable/FormInput";
+import emailjs from '@emailjs/browser';
+import Button from '../reusable/Button';
+import FormInput from '../reusable/FormInput';
 
-import React, { useEffect } from "react";
+import React, { useEffect } from 'react';
 
 type Props = {};
 

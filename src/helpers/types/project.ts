@@ -1,7 +1,7 @@
 type CategoryTypes =
-  | "Web Application"
-  | "Mobile Application"
-  | "Library"
+  | 'Web Application'
+  | 'Mobile Application'
+  | 'Library'
 
 export type ProjectTypes = {
   id: number;
