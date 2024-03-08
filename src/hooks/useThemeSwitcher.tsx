@@ -19,9 +19,9 @@ const useThemeSwitcher = (): [Theme, Dispatch<SetStateAction<Theme>>] => {
     root.classList.remove(theme === 'dark' ? 'light' : 'dark');
     root.classList.add(theme);
 
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('theme', theme);
-    }
+    // if (typeof window !== 'undefined') {
+    //   localStorage.setItem('theme', theme);
+    // }
   }, [theme]);
 
   return [theme === 'dark' ? 'light' : 'dark', setTheme];

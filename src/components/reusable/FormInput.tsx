@@ -1,22 +1,16 @@
-import { HTMLInputTypeAttribute } from 'react';
+import React, { ChangeEvent, ChangeEventHandler, HTMLInputTypeAttribute, forwardRef } from 'react';
+import { FieldValues, UseFormRegister } from 'react-hook-form';
 
-type Props = {
+type Props = React.InputHTMLAttributes<HTMLInputElement> & {
     label?: string;
-    type?: HTMLInputTypeAttribute;
-    id?: string;
-    name?: string;
-    placeholder?: string;
-    required?: boolean;
+	error?: string;
 }
 
-const FormInput = ({
+const FormInput:React.FC<Props> = ({
 	label,
-	type,
-	id,
-	name,
-	placeholder,
-    required
-}:Props) => {
+	error,
+	...props
+}) => {
 	return (
 		<div className="font-general-regular mb-4">
 			<label
@@ -26,12 +20,9 @@ const FormInput = ({
 			</label>
 			<input
 				className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
-				type={type}
-				id={id}
-				name={name}
-				placeholder={placeholder}
-				required={required}
+				{...props}
 			/>
+			{error && <span style={{ color: 'red' }}>{error}</span>}
 		</div>
 	);
 };

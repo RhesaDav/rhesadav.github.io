@@ -1,4 +1,4 @@
-type CategoryTypes =
+export type CategoryTypes =
   | 'Web Application'
   | 'Mobile Application'
   | 'Library'

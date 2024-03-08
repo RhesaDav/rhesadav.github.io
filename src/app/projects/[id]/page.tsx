@@ -30,7 +30,7 @@ export default function ProjectSingle({params}:{params: {id:string}}) {
 
   if (!data) return (
     <div className="container mx-auto">
-      <div>Project Not Found</div>
+      <div>Loading...</div>
     </div>
   )
 

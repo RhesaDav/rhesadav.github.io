@@ -7,7 +7,6 @@ type Props = {
   data?: AboutMeTypes;
 };
 function AboutMeBio({ data }: Props) {
-  console.log(data);
   return (
     <div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
       <div className="w-full sm:w-1/4 mb-7 sm:mb-0 flex flex-col gap-5">

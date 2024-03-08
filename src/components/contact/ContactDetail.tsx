@@ -1,20 +1,31 @@
-import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
+import Link from 'next/link';
+import { FiPhone, FiMapPin, FiMail, FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
 
-const contacts = [
+type ContactTypes = {
+	name: string;
+	icon: React.ReactElement;
+	link?: string;
+}
+const contacts:ContactTypes[] = [
 	{
-		id: 1,
-		name: 'Your Address, Your City, Your Country',
-		icon: <FiMapPin />,
-	},
-	{
-		id: 2,
-		name: 'email@domain.com',
+		name: 'rhesadav48@gmail.com',
 		icon: <FiMail />,
+		link: 'mailto:rhesadav48@gmail.com?body=Hello!!'
 	},
 	{
-		id: 3,
-		name: '555 8888 888',
-		icon: <FiPhone />,
+		name: 'Rhesa Davinanto',
+		icon: <FiInstagram />,
+		link: 'https://www.instagram.com/rhesadavinanto/'
+	},
+	{
+		name: 'Rhesa Davinanto',
+		icon: <FiLinkedin />,
+		link: 'https://www.linkedin.com/in/rhesa-davinanto/'
+	},
+	{
+		name: 'RhesaDav',
+		icon: <FiGithub />,
+		link: 'https://github.com/RhesaDav'
 	},
 ];
 
@@ -26,13 +37,15 @@ function ContactDetails() {
 					Contact details
 				</h2>
 				<ul>
-					{contacts.map((contact) => (
-						<li className="flex " key={contact.id}>
+					{contacts.map((contact, index) => (
+						<li className="flex " key={index}>
 							<i className="text-2xl text-neutral-500 dark:text-neutral-400 mr-4 mt-1">
 								{contact.icon}
 							</i>
-							<span className="text-lg mb-4 text-ternary-dark dark:text-ternary-light">
+							<span className={`text-lg mb-4 text-ternary-dark dark:text-ternary-light ${!contact.link ? '' : 'hover:underline'}`}>
+								<Link target='_blank' href={contact.link || ''}>
 								{contact.name}
+								</Link>
 							</span>
 						</li>
 					))}
