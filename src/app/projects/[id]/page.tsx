@@ -164,7 +164,7 @@ export default function ProjectSingle({params}:{params: {id:string}}) {
         </div>
       </div>
 
-      <RelatedProjects />
+      {/* <RelatedProjects /> */}
     </div>
   );
 }

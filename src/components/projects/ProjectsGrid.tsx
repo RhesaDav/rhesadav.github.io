@@ -5,21 +5,20 @@ import ProjectSingle from './ProjectSingle';
 import ProjectsFilter from './ProjectsFilter';
 import { projectsData } from '@/data/projectData';
 import { ProjectTypes } from '@/helpers/types/project';
+import TypeWriter from '../reusable/TypeWriter';
 
 type Props = {
     data?: ProjectTypes[]
+	loading?: boolean
 }
 
-function ProjectsGrid({data}: Props) {
+function ProjectsGrid({data, loading}: Props) {
 	const [searchProject, setSearchProject] = useState<string>('');
 	const [selectProject, setSelectProject] = useState<string>('');
 
 	const selectProjectsByCategory = data?.filter((item) => {
 		const formattedCategory = item.category.map((cat) => cat.charAt(0).toUpperCase() + cat.slice(1));
     return formattedCategory.includes(selectProject);
-		// let category =
-		// 	item.category.charAt(0).toUpperCase() + item.category.slice(1);
-		// return category.includes(selectProject);
 	});
 
 	return (
@@ -102,17 +101,14 @@ function ProjectsGrid({data}: Props) {
 				</div>
 			</div>
 
-			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-5">
-			{data?.map((project, index) => (
-							<ProjectSingle key={index} {...project} />
-					  ))}
-				{/* {selectProject
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+				{selectProject
 					? selectProjectsByCategory?.map((project, index) => {
 							return <ProjectSingle key={index} {...project} />;
 					  })
 					: data?.map((project, index) => (
 							<ProjectSingle key={index} {...project} />
-					  ))} */}
+					  ))}
 			</div>
 		</section>
 	);

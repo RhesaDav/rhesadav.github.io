@@ -4,34 +4,36 @@ import {
 	FiLinkedin,
 	FiGlobe,
 	FiYoutube,
+	FiInstagram,
+	FiMail,
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 
 const socialLinks = [
 	{
-		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.stoman.me/',
+		name: 'rhesadav48@gmail.com',
+		icon: <FiMail />,
+		link: 'mailto:rhesadav48@gmail.com?body=Hello!!'
 	},
 	{
-		id: 2,
-		icon: <FiGithub />,
-		url: 'https://github.com/realstoman',
+		name: 'Rhesa Davinanto',
+		icon: <FiInstagram />,
+		link: 'https://www.instagram.com/rhesadavinanto/'
 	},
 	{
-		id: 3,
-		icon: <FiTwitter />,
-		url: 'https://twitter.com/realstoman',
-	},
-	{
-		id: 4,
+		name: 'Rhesa Davinanto',
 		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/realstoman',
+		link: 'https://www.linkedin.com/in/rhesa-davinanto/'
 	},
 	{
-		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/realstoman',
+		name: 'RhesaDav',
+		icon: <FiGithub />,
+		link: 'https://github.com/RhesaDav'
+	},
+	{
+		name: 'Rhesa Web',
+		icon: <FiGlobe />,
+		link: '/',
 	},
 ];
 
@@ -45,11 +47,11 @@ function AppFooter() {
 						Follow me
 					</p>
 					<ul className="flex gap-4 sm:gap-8">
-						{socialLinks.map((link) => (
+						{socialLinks.map((link, index) => (
 							<a
-								href={link.url}
+								href={link.link}
 								target="__blank"
-								key={link.id}
+								key={index}
 								className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4 duration-300"
 							>
 								<i className="text-xl sm:text-2xl md:text-3xl">

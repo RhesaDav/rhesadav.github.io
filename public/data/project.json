@@ -43,5 +43,87 @@
         }
       ]
     }
+  },
+  {
+    "id": 2,
+    "title": "Nadi Health Web Admin",
+    "url": "-",
+    "category": ["Web Application"],
+    "publishDate": "Jul 26, 2024",
+    "images": [
+      "/images/nadi-web/001.jpg",
+      "/images/nadi-web/002.jpg",
+      "/images/nadi-web/003.jpg"
+    ],
+    "content": "Proyek ini bertujuan untuk memudahkan user untuk manage aplikasi mobile. Proyek ini mencakup fitur-fitur seperti pencatatan data real-time, booking klinik, booking doktor, akses multi-peran. Proses pengembangan melibatkan penggunaan Figma untuk desain, ClickUp untuk manajemen proyek.",
+    "info": {
+      "technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "TailwindCSS"
+          ]
+        }
+      ],
+      "features": [
+        {
+          "title": "Features",
+          "feature": [
+            "Terdiri dari lebih dari 10 role. Superadmin memiliki kewenangan menambahkan admin baru.",
+            "Menyediakan fungsi create, read, delete, dan update untuk semua data yang saling berkaitan.",
+            "Memungkinkan penambahan pengguna baru, melihat daftar seluruh pengguna, menghapus pengguna, dan mengedit data pengguna.",
+            "Menerapkan sistem keamanan tinggi untuk melindungi data sensitif.",
+            "Menyediakan log aktivitas untuk memantau perubahan dan aktivitas di dalam sistem.",
+            "Merupakan antarmuka yang responsif dan ramah pengguna untuk mendukung penggunaan yang nyaman di berbagai perangkat.",
+            "Menggunakan Figma untuk desain yang estetis, ClickUp untuk manajemen proyek yang efisien, dan Diagrams.net untuk representasi visual yang jelas."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Nadi Health Mobile",
+    "url": "-",
+    "category": ["Mobile Application"],
+    "publishDate": "Jul 26, 2024",
+    "images": [
+      "/images/nadi-mobile/001.jpg",
+      "/images/nadi-mobile/002.jpg",
+      "/images/nadi-mobile/003.jpg"
+    ],
+    "content": "Proyek ini bertujuan untuk mengembangkan sistem manajemen administrasi yang memiliki tingkat keamanan tinggi menggunakan Next.js. Proyek ini mencakup fitur-fitur seperti pencatatan data real-time, akses multi-peran, dan langkah-langkah keamanan setara dengan standar pemerintah. Proses pengembangan melibatkan penggunaan Figma untuk desain, ClickUp untuk manajemen proyek, dan Diagrams.net untuk representasi visual.",
+    "info": {
+      "technologies": [
+        {
+          "title": "Tools & Technologies",
+          "techs": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "TailwindCSS"
+          ]
+        }
+      ],
+      "features": [
+        {
+          "title": "Features",
+          "feature": [
+            "Terdiri dari lebih dari 10 role. Superadmin memiliki kewenangan menambahkan admin baru.",
+            "Menyediakan fungsi create, read, delete, dan update untuk semua data yang saling berkaitan.",
+            "Memungkinkan penambahan pengguna baru, melihat daftar seluruh pengguna, menghapus pengguna, dan mengedit data pengguna.",
+            "Menerapkan sistem keamanan tinggi untuk melindungi data sensitif.",
+            "Menyediakan log aktivitas untuk memantau perubahan dan aktivitas di dalam sistem.",
+            "Merupakan antarmuka yang responsif dan ramah pengguna untuk mendukung penggunaan yang nyaman di berbagai perangkat.",
+            "Menggunakan Figma untuk desain yang estetis, ClickUp untuk manajemen proyek yang efisien, dan Diagrams.net untuk representasi visual yang jelas."
+          ]
+        }
+      ]
+    }
   }
 ]

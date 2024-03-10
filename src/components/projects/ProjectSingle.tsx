@@ -25,6 +25,9 @@ const ProjectSingle = (props: ProjectTypes) => {
 				duration: 0.7,
 				delay: 0.15,
 			}}
+			whileHover={{
+				scale: 1.1,
+			}}
 		>
 			<Link
 				href="/projects/[id]"
@@ -36,10 +39,10 @@ const ProjectSingle = (props: ProjectTypes) => {
 					<div>
 						<Image
 							src={props.images[0]}
-							className="rounded-t-xl border-none"
+							className="rounded-t-xl border-none object-cover h-72"
 							alt="Single Project"
-							width={1000}
-							height={1000}
+							width={500}
+							height={240}
 						/>
 					</div>
 					<div className="text-center px-4 py-6">
